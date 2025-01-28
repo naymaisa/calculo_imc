@@ -1,0 +1,12 @@
+.header {
+    background-color: rgba(65, 164, 164, 0.69);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header p {
+    font-size: 28px;
+    font-weight: bolder;
+    background-color: rgba(65, 164, 164, 0.474);
+}
