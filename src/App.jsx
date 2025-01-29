@@ -4,16 +4,26 @@ import Header from "./components/Header";
 
 function App() {
   const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(false);
+  const [mensagem, setMensagem] = useState("Gostaria de realizar uma avaliação de IMC?");
+
+  const handleButtonClick = () => {
+    setFormularioEstaVisivel(!formularioEstaVisivel);
+    if (!formularioEstaVisivel) {
+      setMensagem("Digite aqui sua altura e peso para calcularmos o IMC");
+    } else {
+      setMensagem("Gostaria de realizar uma avaliação de IMC?");
+    }
+  };
 
   return (
     <>
       <Header />
       <div className="centralizado">
-        <h2>Gostaria de realizar uma avaliação de IMC?</h2>
+        <h2>{mensagem}</h2>
         {formularioEstaVisivel && <Formulario />}
         <button
           className="button"
-          onClick={() => setFormularioEstaVisivel(!formularioEstaVisivel)}
+          onClick={handleButtonClick}
           type="button"
         >
           Iniciar avaliação

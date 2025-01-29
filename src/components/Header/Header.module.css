@@ -8,5 +8,10 @@
 .header p {
     font-size: 28px;
     font-weight: bolder;
-    background-color: rgba(65, 164, 164, 0.474);
+    background-color: rgba(65, 164, 164, 0.096);
+}
+
+.img {
+    max-width: 80px;
+    background-color: rgba(65, 164, 164, 0.096);
 }

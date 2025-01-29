@@ -26,12 +26,12 @@ const Formulario = () => {
 
     return (
         <form className={styles.form}>
-            <input
+            <input className={styles.input}
                 type="number"
                 placeholder="Seu peso"
                 onChange={evento => setSeuPeso(parseFloat(evento.target.value))}
             />
-            <input
+            <input className={styles.input}
                 type="number"
                 placeholder="Sua altura"
                 onChange={evento => setSuaALtura(parseFloat(evento.target.value))}

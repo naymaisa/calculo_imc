@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
     background-color: rgba(180, 233, 233, 0.69);
 }
 
@@ -19,5 +20,6 @@
 
 .button {
     margin-top: 20px;
-    /* Espaçamento entre o botão e o título */
+    background-color: #fff;
+    font-weight: bold;
 }
